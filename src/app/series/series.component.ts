@@ -16,9 +16,9 @@ export class SeriesComponent implements OnInit {
     return series 
   }
   calcularPromedioSeasons(): number {
-    // Sumar todas las temporadas
+
     const totalSeasons = this.series.reduce((total, serie) => total + serie.seasons, 0);
-    // Calcular el promedio
+
     const promedio = totalSeasons / this.series.length;
     return promedio;
   }
